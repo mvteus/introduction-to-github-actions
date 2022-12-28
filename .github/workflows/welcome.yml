@@ -1,6 +1,7 @@
 name: Post welcome comment
 on:
   pull_request:
+<<<<<<< HEAD
     types: [opened]
 jobs:
   build:
@@ -11,3 +12,6 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PR_URL: ${{ github.event.pull_request.html_url }}
+=======
+    types: [opened]
+>>>>>>> origin/main
